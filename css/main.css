@@ -1,0 +1,118 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #333;
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tab-container .tab-content {
+  display: none;
+  padding: 0 20px 10px;
+}
+
+.tab-container .tab-content h2 {
+  font-size: 18px;
+  color: #666;
+}
+
+.tab-container .tab-content p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #999;
+}
+
+.tab-container input[name="sections"] {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+}
+
+.tab-container input[name="sections"]:checked ~ .tab-content {
+  display: block;
+}
+
+.tab-menu {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs-container label {
+  background: #dbdbdb;
+  color: #666666;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 1px solid #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tabs-container label.active {
+  background: #FFF;
+  color: #cccccc;
+}
+
+.content-area {
+  padding: 0 20px;
+  color: #999;
+}
+
+@media (min-width: 768px) {
+
+.tab-menu {
+    display: table;
+  }
+
+  .tab-menu > li {
+    display: table-cell;
+  } 
+
+  .tab-container > label, .tab-container > input[name="sections"] {
+    display: none;
+  }
+
+  .tabs-container label {
+    font-size: 16px;
+    border-left: 1px solid #FFF;
+  }
+
+  .tab-container .tab-content h2 {
+    font-size: 22px;
+  }
+
+  .tab-container .tab-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
